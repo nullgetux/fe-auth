@@ -9,6 +9,10 @@ const menuItems = [
         ]
     },
 
+    { label: "Manajemen Akun    ", type: "HEADER", },
+    { id: "kelolapengguna", label: "Kelola Pengguna", icon: "ph-duotone ph-user", link: "/kelola/pengguna", dataPage: "kelola-pengguna" },
+    { id: "kelolaperan", label: "Kelola Peran", icon: "ph-duotone ph-user", link: "/kelola/peran", dataPage: "kelola-peran" },  
+
     { label: "Pages", type: "HEADER", },
     {
         type: "HASHMENU", id: "authentication", label: "Authentication", dataPage: null, icon: "ph-duotone ph-shield-checkered", link: "#",
