@@ -18,6 +18,10 @@ const Login = () => {
 
     // Handle form submission
     const handleLogin = async () => {
+        if (!email || !password) {
+            setError("Email and password are required");
+            return;
+        }
         try {
             const response = await fetch("http://localhost:3000/api/auth/login", {
                 method: "POST",
