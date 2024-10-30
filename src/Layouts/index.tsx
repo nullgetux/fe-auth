@@ -136,22 +136,6 @@ const Layout = ({ children }: LayoutProps) => {
             </div>
           </div>
           <Footer />
-          <RightCustomizer
-            showOffcanvas={showOffcanvas}
-            handleOffcanvasToggle={handleOffcanvasToggle}
-            themeMode={themeMode}
-            changeThemeMode={changeThemeMode}
-            themePreset={themePreset}
-            changeThemePreset={changeThemePreset}
-            themeLayout={themeLayout}
-            changeThemeLayout={changeThemeLayout}
-            isLayoutWidth={isLayoutWidth}
-            handleChangeLayoutWidth={handleChangeLayoutWidth}
-            sidebarTheme={sidebarTheme}
-            changeSidebarTheme={changeSidebarTheme}
-            sidebarThemeCaptions={sidebarThemeCaptions}
-            changeSidebarThemeCaptions={changeSidebarThemeCaptions}
-          />
         </>
         :
         layoutTheme === "horizontal" ? (
