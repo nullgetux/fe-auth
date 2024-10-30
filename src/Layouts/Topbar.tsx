@@ -35,15 +35,14 @@ const TopBar = ({ handleOffcanvasToggle, changeThemeMode, toogleSidebarHide, too
                 method: "POST", // Or "GET", depending on your API
                 credentials: "include", // Include cookies for session
             });
-
+    
             if (!response.ok) {
                 throw new Error("Logout failed"); // Handle error
             }
-
-            // Clear cookies or local storage
-            // For example, if you're using cookies to store the token:
-            document.cookie = "token=; path=/;";
-
+    
+            // Clear the cookie by setting it with the same path, and an expiration in the past
+            document.cookie = "token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+    
             // Optionally, redirect to login page or homepage
             window.location.href = "/auth/login"; // or wherever you want to redirect
         } catch (error) {
