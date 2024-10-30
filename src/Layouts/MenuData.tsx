@@ -3,10 +3,7 @@ const menuItems = [
         label: "Navigation", type: "HEADER", //  HEADER , HASHMENU, ITEM(default)
     },
     {
-        type: "HASHMENU", id: 1, label: "Dashboard", icon: "ph-duotone ph-gauge", badge: "2", dataPage: null, link: "#",
-        submenu: [
-            { id: "dashboard", label: "Analytics", link: "/dashboard", dataPage: "dashboard" },
-        ]
+        id: "dashboard", label: "Dashboard", icon: "ph-duotone ph-gauge",dataPage: null, link: "/dashboard",
     },
 
     { label: "Manajemen Akun    ", type: "HEADER", },
