@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import BreadcrumbItem from "@common/BreadcrumbItem";
 import Layout from "@layout/index";
 import { Card, Col, Row } from "react-bootstrap";
-import FixedHeader from "@views/Table/DataTable/FixHeader";
+import DataUsers from "@views/Table/DataTable/DataUsers";
 
 interface User {
     id: number;
@@ -69,7 +69,7 @@ const Pengguna = () => {
                             ) : error ? (
                                 <p style={{ color: 'red' }}>Error: {error}</p>
                             ) : (
-                                <FixedHeader data={users} />
+                                <DataUsers data={users} />
                             )}
                         </div>
                         </Card.Body>
